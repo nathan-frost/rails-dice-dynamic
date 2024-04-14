@@ -10,5 +10,6 @@ Rails.application.routes.draw do
 
   get("/dice/5/4", {:controller =>"main", :action =>"five_four"})
 
+  get("/dice/:number_of_dice/:how_many_sides", {:controller =>"main", :action =>"flex"})
 
 end
